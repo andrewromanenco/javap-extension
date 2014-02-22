@@ -17,7 +17,6 @@ with open(path) as fp:
 
 p = re.compile('^(\s+)(\d+)(:\s)(\w+)(\s.*)$')
 
-#with open() as fp:
 for line in sys.stdin:
     m = p.match(line)
     if m is None:
